@@ -1112,38 +1112,81 @@ img {
   margin-bottom: 2.5rem;
 }
 
-/* Portfolio Filters and Layout */
+/* Portfolio Filters — Premium Chip Design */
 .portfolio-filter-container {
   display: flex;
-  gap: 1rem;
+  gap: 0.65rem;
   justify-content: center;
   margin-bottom: 3.5rem;
   flex-wrap: wrap;
 }
 
 .filter-btn {
-  background: transparent;
-  border: none;
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.6rem 1.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.4rem;
   border-radius: 30px;
   cursor: pointer;
   color: var(--text-secondary);
-  border: 1px solid var(--border-color);
   transition: var(--transition-fast);
+  overflow: hidden;
 }
 
+.filter-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* All */
+.filter-btn[data-category="All"]::before       { background: linear-gradient(135deg, #C8A96A, #e8c97a); }
+/* Photography */
+.filter-btn[data-category="Photography"]::before { background: linear-gradient(135deg, #7c6dfa, #a78bfa); }
+/* Branding */
+.filter-btn[data-category="Branding"]::before  { background: linear-gradient(135deg, #f87171, #fb923c); }
+/* Marketing */
+.filter-btn[data-category="Marketing"]::before { background: linear-gradient(135deg, #34d399, #10b981); }
+/* Web */
+.filter-btn[data-category="Web"]::before       { background: linear-gradient(135deg, #38bdf8, #818cf8); }
+/* Design */
+.filter-btn[data-category="Design"]::before    { background: linear-gradient(135deg, #f472b6, #e879f9); }
+/* Community */
+.filter-btn[data-category="Community"]::before { background: linear-gradient(135deg, #fb923c, #f87171); }
+
 .filter-btn:hover {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+.filter-btn:hover::before {
+  opacity: 1;
+}
+
+.filter-btn:hover span,
+.filter-btn.active span {
+  position: relative;
+  z-index: 1;
 }
 
 .filter-btn.active {
-  background-color: var(--primary-color);
-  color: var(--white);
-  border-color: var(--primary-color);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+}
+
+.filter-btn.active::before {
+  opacity: 1;
 }
 
 .portfolio-grid {

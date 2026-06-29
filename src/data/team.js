@@ -15,8 +15,8 @@ export const team = [
     name: "Roy Mvula",
     role: "Manager, Software Developer",
     image: "/uploads/roy.jpeg",
-    
-    
+
+
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -28,7 +28,7 @@ export const team = [
     name: "Newton Hang'andu",
     role: "I.T Specialist, Videographer",
     image: "/uploads/vedax.jpeg",
-    
+
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -36,12 +36,12 @@ export const team = [
     }
   },
 
- {
+  {
     id: 4,
     name: "Chewe Comfort Bwembya",
     role: "Photography, Media Consultant, Videography, Editor",
     image: "/uploads/chewe.jpeg",
-    
+
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -54,7 +54,7 @@ export const team = [
     name: "Emmanuel Kabwe",
     role: "Videography-creative, Director, Photography, Editor",
     image: "/uploads/emma.jpeg",
-    
+
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -66,7 +66,7 @@ export const team = [
     name: "Luyando Hamachila",
     role: "I.T Specialist, AI expert, Full-stack Developer",
     image: "/uploads/turrel.jpeg",
-    
+
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -78,19 +78,30 @@ export const team = [
     name: "Sibusiso Chishala",
     role: "Full-stack Developer, Marketing, Photography",
     image: "/uploads/sbu.jpeg",
-    
+
     socials: {
       linkedin: "#",
       twitter: "#",
       instagram: "#"
     }
   },
-   {
+  {
     id: 8,
     name: "Twapewa Mwalusaka",
     role: "Content-creative, Graphic Design, Photography, I.T Specialist",
     image: "/uploads/twaps.png",
-    
+
+    socials: {
+      linkedin: "#",
+      twitter: "#",
+      instagram: "#"
+    }
+  },
+  {
+    id: 9,
+    name: "James Mumba",
+    role: "Software Engineer, AI Expert, Full-Stack / Mobile Developer",
+    image: "/uploads/James.jpg",
     socials: {
       linkedin: "#",
       twitter: "#",

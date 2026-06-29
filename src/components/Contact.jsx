@@ -69,10 +69,11 @@ export default function Contact() {
               <div className="contact-detail-item">
                 <div className="contact-detail-icon">
                   <i className="fas fa-map-marker-alt"></i>
-               
-                  
                 </div>
-
+                <div>
+                  <h4>Our Location</h4>
+                  <p>Lusaka, Zambia</p>
+                </div>
               </div>
             </div>
           </div>
